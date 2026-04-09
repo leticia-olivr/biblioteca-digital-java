@@ -35,14 +35,12 @@ O sistema permite gerenciar usuários, materiais e empréstimos, aplicando regra
 
 interfaces
 usuarios
-materiais
 entidades
 sistema
 
 * interfaces: contratos do sistema
 * usuarios: classes relacionadas aos usuários
-* materiais: classes dos materiais da biblioteca
-* entidades: classes como `Emprestimo`
+* entidades: classes como `Emprestimo`e classes dos materiais da biblioteca
 * sistema: classe `Biblioteca` e `Main`
 
 ---
@@ -77,7 +75,7 @@ multa = diasDeAtraso × valorMultaDiaria
 ## Como Executar
 
 1. Clone o repositório
-   git clone <seu-link-aqui>
+   git clone <https://github.com/leticia-olivr/biblioteca-digital-java.git>
 
 2. Abra o projeto em uma IDE (VS Code, IntelliJ ou Eclipse)
 

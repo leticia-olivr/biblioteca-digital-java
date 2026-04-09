@@ -52,6 +52,6 @@ public class Professor extends Usuario {
 
     @Override
     public String tipoUsuario() {
-        return "Aluno";
+        return "Professor";
     }
 }

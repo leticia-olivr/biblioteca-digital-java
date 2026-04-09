@@ -16,7 +16,7 @@ public class Aluno extends Usuario {
 
     @Override
     public String getNome(){
-        return super.getEmail();
+        return super.getNome();
     }
 
     @Override

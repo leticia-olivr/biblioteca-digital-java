@@ -53,5 +53,8 @@ public class Main {
 
         System.out.println("\n=== Materiais Atualizados ===");
         biblioteca.listarMateriais();
+
+        System.out.println("\n=== Empréstimos em andamento (FINAL) ===");
+        biblioteca.listarEmprestimosEmAndamento();
     }
 }
