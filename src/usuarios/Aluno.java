@@ -2,6 +2,9 @@ package usuarios;
 
 public class Aluno extends Usuario {
     
+    Aluno(){
+    }
+    
     Aluno(int codigo, String nome, String email){
         super(codigo, nome, email);
     }

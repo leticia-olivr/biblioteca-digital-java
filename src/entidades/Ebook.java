@@ -5,11 +5,15 @@ public class Ebook extends Material {
     private String formato;
     private int tamanhoArquivo;
 
+    public Ebook(){
+    }
+
     Ebook(int codigo, String titulo,int anoPublicacao ,int quantidadeDisponivel, String formato, int tamanhoArquivo){
         super(codigo, titulo, anoPublicacao, quantidadeDisponivel);
         this.formato = formato;
         this.tamanhoArquivo = tamanhoArquivo;
     }
+
 
     public String getFormato() {
         return formato;
@@ -52,6 +56,13 @@ public class Ebook extends Material {
     public void setQuantidadeDisponivel(int quantidadeDisponivel) {
         super.setQuantidadeDisponivel(quantidadeDisponivel);
     }
+
+    @Override
+    public String infoEspecifica(){
+        return "Formato: " + formato + " | Tamanho: " + tamanhoArquivo + " MB";
+    }
+
+
 
 
 }

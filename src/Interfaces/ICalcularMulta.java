@@ -1,7 +1,7 @@
 package Interfaces;
 
 public interface ICalcularMulta {
-    double CalcularMulta();
+    double calcularMulta();
 }
 
 //Emprestimo

@@ -3,6 +3,9 @@ package entidades;
 public class Revista extends Material {
     private int edicao;
 
+    Revista(){
+    }
+
     Revista(int codigo, String titulo,int anoPublicacao ,int quantidadeDisponivel, int edicao){
         super(codigo, titulo, anoPublicacao, quantidadeDisponivel);
         this.edicao = edicao;
@@ -41,5 +44,10 @@ public class Revista extends Material {
     public void setQuantidadeDisponivel(int quantidadeDisponivel) {
         super.setQuantidadeDisponivel(quantidadeDisponivel);
     }
+
+    @Override
+    public String infoEspecifica(){
+        return "Edição: " + edicao;
+     }
 
 }

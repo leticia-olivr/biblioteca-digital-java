@@ -3,6 +3,9 @@ package entidades;
 public class Livro extends Material {
     private String autor;
 
+    Livro(){
+    }
+
     Livro(int codigo, String titulo,int anoPublicacao ,int quantidadeDisponivel, String autor ){
         super(codigo, titulo, anoPublicacao, quantidadeDisponivel);
         this.autor = autor;
@@ -40,5 +43,10 @@ public class Livro extends Material {
     @Override
     public void setQuantidadeDisponivel(int quantidadeDisponivel) {
         super.setQuantidadeDisponivel(quantidadeDisponivel);
+    }
+
+    @Override
+    public String infoEspecifica(){
+        return "Autor: " + autor;
     }
 }

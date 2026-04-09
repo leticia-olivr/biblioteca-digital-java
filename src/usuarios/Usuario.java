@@ -44,7 +44,7 @@ public abstract class Usuario implements IExibir {
 
     @Override
     public String exibirResumo(){
-        return nome + "|" + email + "|" + codigo;
+        return nome + " | " + email + " | cod: " + codigo;
     }
 }
 //implementar exibivel

@@ -9,6 +9,9 @@ public abstract class Material implements IExibir {
     private int anoPublicacao;
     private int quantidadeDisponivel;
 
+    Material(){
+    }
+
     Material(int codigo, String titulo, int anoPublicacao, int quantidadeDisponivel){
         this.codigo = codigo;
         this.titulo = titulo;
@@ -47,9 +50,15 @@ public abstract class Material implements IExibir {
         quantidadeDisponivel++;
     }
 
+    public abstract String infoEspecifica();
+
     @Override
     public String exibirResumo(){
-        return titulo + "|" + codigo + "|" + anoPublicacao + "|" + quantidadeDisponivel;
+        return "Código: " + codigo +
+               " | Título: " + titulo +
+               " | Ano: " + anoPublicacao +
+               " | Quantidade: " + quantidadeDisponivel +
+               " | " + infoEspecifica();
     }
 }
  
