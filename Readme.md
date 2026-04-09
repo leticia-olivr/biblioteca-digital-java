@@ -1,88 +1,54 @@
-# Sistema de Biblioteca Digital em Java
+# Biblioteca Digital em Java
 
-## Sobre o Projeto
+## Sobre o projeto
 
-Este projeto consiste no desenvolvimento de um sistema de biblioteca digital utilizando Java e os principais conceitos de Programação Orientada a Objetos (POO).
-
-O sistema permite gerenciar usuários, materiais e empréstimos, aplicando regras de negócio como controle de disponibilidade, limite de empréstimos e cálculo de multa por atraso.
-
----
+Este projeto foi desenvolvido em Java com foco na prática de Programação Orientada a Objetos. O sistema simula o funcionamento de uma biblioteca digital, permitindo o cadastro de usuários e materiais, além do controle de empréstimos, devoluções e multas por atraso.
 
 ## Funcionalidades
 
-* Cadastro de usuários (Aluno e Professor)
-* Cadastro de materiais (Livro, Revista e Ebook)
+* Cadastro de usuários
+* Cadastro de materiais
 * Realização de empréstimos
 * Registro de devoluções
 * Cálculo de multa por atraso
 * Listagem de usuários, materiais e empréstimos
-* Validação de regras do sistema (limite de empréstimos, disponibilidade, etc.)
 
----
+## Conceitos utilizados
 
-## Conceitos de POO Utilizados
-
-* Classes abstratas (`Usuario`, `Material`)
-* Herança (`Aluno`, `Professor`, `Livro`, `Revista`, `Ebook`)
-* Interfaces (`IExibir`, `CalculavelMulta`)
+* Classes abstratas
+* Herança
+* Interfaces
 * Encapsulamento
 * Polimorfismo
-* Listas (`ArrayList`)
+* Listas com ArrayList
 
----
+## Estrutura do projeto
 
-## Estrutura do Projeto
+* `Interfaces`: interfaces do sistema
+* `usuarios`: classes de usuário
+* `entidades`: materiais e empréstimos
+* `sistema`: classes principais do sistema
 
-interfaces
-usuarios
-entidades
-sistema
+## Regras do sistema
 
-* interfaces: contratos do sistema
-* usuarios: classes relacionadas aos usuários
-* entidades: classes como `Emprestimo`e classes dos materiais da biblioteca
-* sistema: classe `Biblioteca` e `Main`
+* Não permite empréstimo sem quantidade disponível
+* Não permite ultrapassar o limite de empréstimos do usuário
+* Calcula a data prevista de devolução conforme o tipo de usuário
+* Atualiza a quantidade do material ao devolver
+* Calcula multa em caso de atraso
+* Não permite devolver o mesmo empréstimo duas vezes
 
----
-
-## Regras do Sistema
-
-* Não é possível emprestar material sem disponibilidade
-* Usuários possuem limite de empréstimos
-* A data de devolução depende do tipo de usuário
-* A devolução atualiza a quantidade do material
-* Multa é aplicada em caso de atraso
-* Não é possível devolver o mesmo empréstimo duas vezes
-
----
-
-## Cálculo de Multa
-
-multa = diasDeAtraso × valorMultaDiaria
-
-* Aluno: R$ 2,50 por dia
-* Professor: R$ 1,00 por dia
-
----
-
-## Tecnologias Utilizadas
+## Tecnologias
 
 * Java
 * Programação Orientada a Objetos (POO)
 
----
-
-## Como Executar
+## Execução
 
 1. Clone o repositório
-   git clone <https://github.com/leticia-olivr/biblioteca-digital-java.git>
-
-2. Abra o projeto em uma IDE (VS Code, IntelliJ ou Eclipse)
-
+2. Abra o projeto em uma IDE Java
 3. Execute a classe `Main`
 
----
+## Autora
 
-## Autor
-
-Projeto desenvolvido por Leticia como prática de Programação Orientada a Objetos em Java.
+Projeto desenvolvido por Leticia para prática acadêmica de Programação Orientada a Objetos em Java.
