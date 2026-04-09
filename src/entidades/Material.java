@@ -9,10 +9,10 @@ public abstract class Material implements IExibir {
     private int anoPublicacao;
     private int quantidadeDisponivel;
 
-    Material(){
+    public Material(){
     }
 
-    Material(int codigo, String titulo, int anoPublicacao, int quantidadeDisponivel){
+    public Material(int codigo, String titulo, int anoPublicacao, int quantidadeDisponivel){
         this.codigo = codigo;
         this.titulo = titulo;
         this.anoPublicacao = anoPublicacao;
@@ -62,5 +62,3 @@ public abstract class Material implements IExibir {
     }
 }
  
-//implementar a interface exibivel
-//Duvidade se ta implementado certo 

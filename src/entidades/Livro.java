@@ -3,10 +3,10 @@ package entidades;
 public class Livro extends Material {
     private String autor;
 
-    Livro(){
+    public Livro(){
     }
 
-    Livro(int codigo, String titulo,int anoPublicacao ,int quantidadeDisponivel, String autor ){
+    public Livro(int codigo, String titulo,int anoPublicacao ,int quantidadeDisponivel, String autor ){
         super(codigo, titulo, anoPublicacao, quantidadeDisponivel);
         this.autor = autor;
     }

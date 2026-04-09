@@ -7,11 +7,11 @@ public abstract class Usuario implements IExibir {
     private String nome;
     private String email;
 
-    Usuario(){
+    public Usuario(){
 
     }
 
-    Usuario(int codigo, String nome, String email){
+    public Usuario(int codigo, String nome, String email){
         this.codigo = codigo;
         this.nome = nome;
         this.email = email;
@@ -47,5 +47,3 @@ public abstract class Usuario implements IExibir {
         return nome + " | " + email + " | cod: " + codigo;
     }
 }
-//implementar exibivel
-// herda Aluno e professor

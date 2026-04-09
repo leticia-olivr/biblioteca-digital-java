@@ -3,12 +3,12 @@ package entidades;
 public class Ebook extends Material {
     
     private String formato;
-    private int tamanhoArquivo;
+    private double tamanhoArquivo;
 
     public Ebook(){
     }
 
-    Ebook(int codigo, String titulo,int anoPublicacao ,int quantidadeDisponivel, String formato, int tamanhoArquivo){
+    public Ebook(int codigo, String titulo,int anoPublicacao ,int quantidadeDisponivel, String formato, double tamanhoArquivo){
         super(codigo, titulo, anoPublicacao, quantidadeDisponivel);
         this.formato = formato;
         this.tamanhoArquivo = tamanhoArquivo;
@@ -23,7 +23,7 @@ public class Ebook extends Material {
         this.formato = formato;
     }
 
-    public int getTamanhoArquivo() {
+    public double getTamanhoArquivo() {
         return tamanhoArquivo;
     }
 

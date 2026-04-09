@@ -2,10 +2,10 @@ package usuarios;
 
 public class Aluno extends Usuario {
     
-    Aluno(){
+    public Aluno(){
     }
     
-    Aluno(int codigo, String nome, String email){
+    public Aluno(int codigo, String nome, String email){
         super(codigo, nome, email);
     }
 

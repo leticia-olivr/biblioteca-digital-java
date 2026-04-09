@@ -19,11 +19,11 @@ public class Emprestimo implements IExibir, ICalcularMulta {
     Emprestimo(){
     }
     
-    Emprestimo(int idEmprestimo, Usuario usuario, Material material, LocalDate emprestimo){
+    public Emprestimo(int idEmprestimo, Usuario usuario, Material material, LocalDate dataEmprestimo){
         this.idEmprestimo = idEmprestimo;
         this.usuario = usuario;
         this.material = material;
-        this.dataEmprestimo = emprestimo;
+        this.dataEmprestimo = dataEmprestimo;
         this.dataPrevistaDevolucao = dataEmprestimo.plusDays(usuario.prazoDevolucaoDias());
 
     }

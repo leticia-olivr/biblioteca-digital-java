@@ -4,4 +4,3 @@ public interface ICalcularMulta {
     double calcularMulta();
 }
 
-//Emprestimo

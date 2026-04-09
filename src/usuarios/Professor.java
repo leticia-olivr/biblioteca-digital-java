@@ -3,10 +3,10 @@ package usuarios;
 public class Professor extends Usuario {
     
 
-    Professor(){
+    public Professor(){
     }
 
-    Professor(int codigo, String nome, String email){
+    public Professor(int codigo, String nome, String email){
         super(codigo, nome, email);
     }
 
